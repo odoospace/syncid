@@ -15,7 +15,7 @@ class reference(models.Model):
         obj = selv.env[sel.model.name].browse(self.odoo_id)
         return obj
 
-    model = fields.Many2one('ir.models')
+    model = fields.Many2one('ir.model')
     source = fields.Many2one('syncid.source')
     odoo_id = fields.Integer()
     source_id = fields.Char()
