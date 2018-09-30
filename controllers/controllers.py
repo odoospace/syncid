@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from openerp import http
+from odoo import http
 
 # class syncid(http.Controller):
 #     @http.route('/syncid/syncid/', auth='public')

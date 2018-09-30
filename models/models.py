@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from openerp import models, fields, api
+from odoo import models, fields, api
 
 class source(models.Model):
     _name = 'syncid.source'
@@ -12,10 +12,10 @@ class reference(models.Model):
 
     def object(self):
         # TODO: check this!
-        obj = selv.env[sel.model.name].browse(self.odoo_id)
+        obj = self.env[sel.model.name].browse(self.odoo_id)
         return obj
 
     model = fields.Many2one('ir.model')
     source = fields.Many2one('syncid.source')
     odoo_id = fields.Integer()
-    source_id = fields.Char()
+    source_id = fields.Char(index=True)
