@@ -15,7 +15,8 @@ class reference(models.Model):
         obj = self.env[self.model.model].browse(self.odoo_id)
         return obj
 
-    model = fields.Many2one('ir.model')
-    source = fields.Many2one('syncid.source')
-    odoo_id = fields.Integer()
-    source_id = fields.Char()
+    model = fields.Many2one('ir.model', required=True)
+    source = fields.Many2one('syncid.source', required=True)
+    odoo_id = fields.Integer(required=True, index=True)
+    source_id = fields.Char(required=True, index=True)
+    scope = fields.Char(index=True)
