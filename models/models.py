@@ -19,3 +19,4 @@ class reference(models.Model):
     source = fields.Many2one('syncid.source')
     odoo_id = fields.Integer()
     source_id = fields.Char(index=True)
+    scope = fields.Char(index=True)
