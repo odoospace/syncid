@@ -4,11 +4,14 @@ from odoo import models, fields, api
 
 class source(models.Model):
     _name = 'syncid.source'
+    _description = 'syncid source model'
 
     name = fields.Char()
 
 class reference(models.Model):
     _name = 'syncid.reference'
+    _description = 'syncid reference model'
+
 
     def object(self):
         # TODO: check this!
