@@ -15,7 +15,7 @@ class reference(models.Model):
 
     def object(self):
         # TODO: check this!
-        obj = self.env[sel.model.name].browse(self.odoo_id)
+        obj = self.env[self.model.name].browse(self.odoo_id)
         return obj
 
     model = fields.Many2one('ir.model')
