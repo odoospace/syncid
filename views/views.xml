@@ -1,5 +1,4 @@
-<openerp>
-  <data>
+<odoo>
     <!-- explicit list view definition -->
     <!--
     <record model="ir.ui.view" id="syncid.list">
@@ -55,5 +54,4 @@
     <menuitem name="Server to list" id="syncid" parent="syncid.menu_2"
               action="syncid.action_server"/>
     -->
-  </data>
-</openerp>
+</odoo>

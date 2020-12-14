@@ -1,5 +1,4 @@
-<openerp>
-    <data>
+<odoo>
         <!--  -->
         <!--   <record id="object0" model="syncid.syncid"> -->
         <!--     <field name="name">Object 0</field> -->
@@ -26,5 +25,4 @@
         <!--     <field name="value">40</field> -->
         <!--   </record> -->
         <!--  -->
-    </data>
-</openerp>
+</odoo>
