@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_syncid_source,syncid.source,model_syncid_source,,1,1,1,1
-access_syncid_reference,syncid.reference,model_syncid_reference,,1,1,1,1
+access_syncid_source,access_syncid_source,model_syncid_source,base.group_user,1,1,1,1
+access_syncid_reference,access_syncid_reference,model_syncid_reference,base.group_user,1,1,1,1
+
