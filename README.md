@@ -1,1 +1,1 @@
-# syncid for Odoo v14.0
+# syncid for Odoo v15.0
